@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 
 public class BaseAcitvity extends AppCompatActivity{
 
+
 //    @Override
 //    public void onCurrentItemClick() {
 //

@@ -26,7 +26,7 @@
             app:title="A Sar Ta Line"
             app:collapsedTitleGravity="center_vertical">
 
-            <include layout="@layout/toolbar_show"></include>
+            <include layout="@layout/view_toolbar_show"></include>
 
             <android.support.v7.widget.Toolbar
                 android:id="@+id/toolbar_details"
@@ -43,7 +43,6 @@
     <include
         android:id="@+id/contentShowItems"
         layout="@layout/content_show_items"/>
-
 
     <android.support.v7.widget.CardView
         android:layout_width="match_parent"
@@ -72,7 +71,8 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="8"
-                android:hint="Search Restaurant" />
+                android:hint="Search Restaurant"
+                android:focusedByDefault="false"/>
         </LinearLayout>
     </android.support.v7.widget.CardView>
 
