@@ -1,4 +1,4 @@
-package com.arkarzaw.asartaline;
+package com.arkarzaw.asartaline.acitvities;
 
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
@@ -9,14 +9,22 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.arkarzaw.asartaline.ContentShowItemView;
+import com.arkarzaw.asartaline.R;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
+
 public class ShowItemsActivity extends AppCompatActivity {
 
+    @BindView(R.id.contentShowItems)
+    ContentShowItemView contentShowItems;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_show_items);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        ButterKnife.bind(this,this);
+        contentShowItems.setUpRecycler();
     }
 
     @Override
